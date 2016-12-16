@@ -13,7 +13,7 @@ Each row is the mean of each variable for each activity and each subject
 
 ## Column contents
 "
-    
-    codebook <- c(codebook, varnames)
+    bullets <- paste("*",varnames)
+    codebook <- c(codebook, bullets)
     writeLines(codebook, filename)
 }
