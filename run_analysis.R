@@ -65,7 +65,7 @@ activities <- readnames(file.path(datadir, "activity_labels.txt"))
 results <- mutate(results, activity = activities[activity])
 
 # Write the second data set
-write.table(results, "aggregated.txt", row.names = FALSE, col.names = FALSE)
+write.table(results, "aggregated.txt", row.names = FALSE)
 
 # Create the code book here for ease of adding the variable names
 source("codebookcreator.R")
